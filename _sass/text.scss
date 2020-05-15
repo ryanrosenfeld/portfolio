@@ -1,15 +1,10 @@
-@font-face {
-  font-family: Muli;
-  src: url("assets/fonts/Muli-VariableFont_wght.ttf");
-}
-
 @mixin font-style {
-  font-weight: 400;
+  font-weight: 500;
   color: #0E2843;
 }
 
 body {
-  font-family: "Muli, sans-serif";
+  font-family: "Muli";
 }
 
 h1, h2, h3, h4, h5, p, a {
