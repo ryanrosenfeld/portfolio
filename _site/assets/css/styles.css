@@ -1,144 +1,40 @@
-.content-container {
-  position: fixed;
-  overflow-y: scroll;
-  width: 70%;
-  top: 0;
-  right: 0;
-  bottom: 0; }
-  .content-container .content {
-    padding: 40px; }
+.content-container { position: fixed; overflow-y: scroll; width: 70%; top: 0; right: 0; bottom: 0; }
+.content-container .content { padding: 40px; }
 
-.post-container h2, .post-container p {
-  padding: 0 40px; }
-.post-container img {
-  max-width: 100%; }
+.post-container h2, .post-container p { padding: 0 40px; }
+.post-container img { max-width: 100%; }
 
-.post-page {
-  position: relative; }
-  .post-page img {
-    display: block;
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto; }
+.post-page { position: relative; }
+.post-page img { display: block; max-width: 60%; margin-left: auto; margin-right: auto; }
 
-.projects {
-  padding: 0 40px; }
-  .projects .page-header {
-    padding-left: 50px; }
-    .projects .page-header h1 {
-      font-weight: 600;
-      margin-bottom: 5px; }
-    .projects .page-header h3 {
-      margin-top: 0px; }
-  .projects .project-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 0;
-    padding-bottom: 55%;
-    cursor: pointer;
-    position: relative;
-    margin-bottom: 60px;
-    box-shadow: 5px 8px 14px #888888;
-    border-radius: 0 30px; }
-    .projects .project-image .project-info-wrapper {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      visibility: hidden;
-      background: rgba(149, 165, 166, 0.8);
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 0 30px; }
-    .projects .project-image .project-info {
-      text-align: center;
-      padding: 0 40px; }
-    .projects .project-image .project-title {
-      position: absolute;
-      visibility: visible;
-      top: 0;
-      left: 0;
-      padding: 15px;
-      margin-top: 0;
-      font-weight: 900;
-      background-color: rgba(149, 165, 166, 0.8);
-      border-bottom-right-radius: 5px; }
-    .projects .project-image .project-title, .projects .project-image .project-description, .projects .project-image .check-it {
-      color: white; }
-    .projects .project-image .check-it {
-      font-size: 20px;
-      font-weight: 800;
-      display: inline-block;
-      position: relative; }
-      .projects .project-image .check-it .arrow {
-        position: absolute;
-        font-size: 25px;
-        right: -28px;
-        top: -1px;
-        transition: right 0.3s 0.05s ease-out; }
-    .projects .project-image:hover .project-info-wrapper {
-      visibility: visible; }
-    .projects .project-image:hover .project-title {
-      background: none; }
-    .projects .project-image:hover .arrow {
-      right: -34px; }
+.projects { padding: 0 40px; }
+.projects .page-header { padding-left: 50px; }
+.projects .page-header h1 { font-weight: 600; margin-bottom: 5px; }
+.projects .page-header h3 { margin-top: 0px; color: #95a5a6; }
+.projects .project-image { background-repeat: no-repeat; background-size: cover; background-position: center; height: 0; padding-bottom: 55%; cursor: pointer; position: relative; margin-bottom: 60px; box-shadow: 5px 8px 14px #888888; border-radius: 0 30px; }
+.projects .project-image .project-info-wrapper { position: absolute; top: 0; bottom: 0; right: 0; left: 0; visibility: hidden; background: rgba(100, 100, 100, 0.8); z-index: 1; display: flex; align-items: center; justify-content: center; border-radius: 0 30px; }
+.projects .project-image .project-info { text-align: center; padding: 0 40px; }
+.projects .project-image .project-title { position: absolute; visibility: visible; top: 0; left: 0; padding: 15px; margin-top: 0; font-weight: 900; background-color: rgba(100, 100, 100, 0.8); border-bottom-right-radius: 5px; }
+.projects .project-image .project-title, .projects .project-image .project-description, .projects .project-image .check-it { color: white; }
+.projects .project-image .check-it { font-size: 20px; font-weight: 800; display: inline-block; position: relative; }
+.projects .project-image .check-it .arrow { position: absolute; font-size: 25px; right: -28px; top: -1px; transition: right 0.3s 0.08s ease-out; }
+.projects .project-image:hover .project-info-wrapper { visibility: visible; }
+.projects .project-image:hover .project-title { background: none; }
+.projects .project-image:hover .arrow { right: -34px; }
 
-body {
-  font-family: "Muli"; }
+body { font-family: "Muli"; }
 
-h1, h2, h3, h4, h5, p, a {
-  font-weight: 500;
-  color: #0E2843; }
+h1, h2, h3, h4, h5, p, a { font-weight: 500; color: #0E2843; }
 
-a {
-  text-decoration: none; }
-  a:hover {
-    color: #5688AB; }
+a { text-decoration: none; }
+a:hover { color: #5688AB; }
 
-.site-nav {
-  position: fixed;
-  width: 30%;
-  overflow: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background: #161B21;
-  display: flex;
-  flex-direction: column; }
-  .site-nav .header-content {
-    padding: 0 40px 80px;
-    z-index: 2;
-    margin-top: auto; }
-  .site-nav .site-title {
-    color: white;
-    font-weight: 600; }
-  .site-nav .site-subtitle {
-    color: rgba(255, 255, 255, 0.7); }
-  .site-nav .nav-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: auto;
-    width: 30%;
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("/assets/images/ryan_main_pic.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 1; }
-  .site-nav .nav-links {
-    display: flex;
-    flex-direction: column; }
-    .site-nav .nav-links a {
-      text-decoration: none;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 20px; }
-      .site-nav .nav-links a.current {
-        color: white;
-        font-weight: 600; }
-      .site-nav .nav-links a + a {
-        margin-top: 8px; }
+.site-nav { position: fixed; width: 30%; overflow: auto; top: 0; left: 0; bottom: 0; background: #161B21; display: flex; flex-direction: column; }
+.site-nav .header-content { padding: 0 40px 80px; z-index: 2; margin-top: auto; }
+.site-nav .site-title { color: white; font-weight: 600; margin-bottom: 5px; }
+.site-nav .site-subtitle { margin: 0 0 20px; color: rgba(255, 255, 255, 0.7); }
+.site-nav .nav-image { position: fixed; top: 0; left: 0; bottom: 0; right: auto; width: 30%; background-image: linear-gradient(to bottom, rgba(22, 27, 33, 0), rgba(22, 27, 33, 0.01), rgba(22, 27, 33, 0.7), rgba(22, 27, 33, 0.8)), url("/assets/images/ryan_main_pic.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center; z-index: 1; }
+.site-nav .nav-links { display: flex; flex-direction: column; }
+.site-nav .nav-links a { text-decoration: none; color: rgba(255, 255, 255, 0.7); font-size: 20px; }
+.site-nav .nav-links a.current { color: white; font-weight: 600; }
+.site-nav .nav-links a + a { margin-top: 8px; }

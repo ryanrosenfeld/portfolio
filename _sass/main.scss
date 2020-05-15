@@ -45,12 +45,13 @@
 
     h3 {
       margin-top: 0px;
-
+      color: rgba(149, 165, 166, 1);
     }
   }
 
   .project-image {
     $border-radius: 0 30px;
+    $background-color: rgba(100, 100, 100, 0.8);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,7 +71,7 @@
       right: 0;
       left: 0;
       visibility: hidden;
-      background: rgba(149, 165, 166, 0.8);
+      background: $background-color;
       z-index: 1;
       display: flex;
       align-items: center;
@@ -91,7 +92,7 @@
       padding: 15px;
       margin-top: 0;
       font-weight: 900;
-      background-color: rgba(149, 165, 166, 0.8);
+      background-color: $background-color;
       border-bottom-right-radius: 5px;
     }
 
@@ -110,7 +111,7 @@
         font-size: 25px;
         right: -28px;
         top: -1px;
-        transition: right 0.3s 0.05s ease-out;
+        transition: right 0.3s 0.08s ease-out;
       }
     }
 
