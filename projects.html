@@ -10,7 +10,7 @@ title: Projects
 
   {% for project in site.projects %}
     <a href="{{ project.url | relative_url }}">
-      <div class="project-image" style="background-image: url('{{ project.image }}')">
+      <div class="project-image" style="background-image: url('{{ project.image | relative_url }}')">
         <div class="project-info-wrapper">
           <div class="project-info">
             <h2 class="project-title">{{ project.name }} - {{ project.year }}</h2>
