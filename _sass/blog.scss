@@ -1,0 +1,69 @@
+$sticky1-light: #ffffc6;
+$sticky1-dark:  #ffff88;
+$sticky2-light: #ffa6ce;
+$sticky2-dark: #ff7eb9;
+$sticky3-light: #f2ffff;
+$sticky3-dark: #7afcff;
+$sticky4-light: #faf6b0;
+$sticky4-dark: #fff740;
+
+@mixin postit-color($light, $dark) {
+  border: 1px solid $light;
+  background: linear-gradient(135deg, $dark 81%, $dark 82%, $dark 82%, $light 100%); /* W3C */
+}
+
+.blog {
+  :nth-child(4n+1) .post {
+    @include postit-color($sticky1-light, $sticky1-dark);
+  }
+
+  :nth-child(4n+2) .post {
+    @include postit-color($sticky2-light, $sticky2-dark);
+  }
+
+  :nth-child(4n+3) .post {
+    @include postit-color($sticky3-light, $sticky3-dark);
+  }
+
+  :nth-child(4n+4) .post {
+    @include postit-color($sticky4-light, $sticky4-dark);
+  }
+
+  .post-wrapper {
+    transform: rotateZ(1.5deg);
+    transition: all 0.5s;
+    display: inline-block;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .post {
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center;    
+    margin: 0 30px 50px 0; 
+    width: 275px;    
+    min-height: 200px;
+    padding: 30px 10px;
+    position:relative;   
+    font-family: 'Reenie Beanie';    
+    font-size: 22px;      
+    border-bottom-right-radius: 60px 5px;
+    display:inline-block;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0; 
+      bottom: 20px;
+      width: 200px;
+      height: 25px;
+      background: transparent;
+      box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+      transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    }
+  }
+}
