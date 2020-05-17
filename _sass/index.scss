@@ -1,0 +1,40 @@
+.index {
+  background-image: url("/assets/images/welcome_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#mac-screen {
+  position: fixed;
+  top: 27%;
+  left: 35%;
+  color: white;
+  transform: rotateZ(-0.5deg);
+  font-family: "Roboto Mono";
+  width: 373px;
+}
+
+@keyframes blinkingText{
+  0% { color: #fff; }
+  49% { color: #fff; }
+  60% { color: transparent; }
+  99% { color: transparent; }
+  100% { color: #fff; }
+}
+
+.login-container {
+  padding-top: 10px;
+}
+
+#login-btn {
+  visibility: hidden;
+  cursor: pointer;
+  animation: blinkingText 1.2s infinite;
+}
+

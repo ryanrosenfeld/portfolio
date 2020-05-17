@@ -24,3 +24,4 @@ plugins:
   - jekyll-seo-tag
 
 permalink: /blog/:year/:month/:day/:title
+exclude: [node_modules]
