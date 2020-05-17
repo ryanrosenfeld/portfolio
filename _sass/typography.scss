@@ -1,6 +1,7 @@
 @mixin font-style {
   font-weight: 400;
   color: color(brown1);
+  margin-top: 0;
 }
 
 @mixin bold {
@@ -13,10 +14,6 @@ body {
 
 h1, h2, h3, h4, h5, p, a {
   @include font-style();
-}
-
-p {
-  margin: 0 0 16px;
 }
 
 a {

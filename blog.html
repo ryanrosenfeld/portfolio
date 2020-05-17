@@ -7,9 +7,9 @@ title: Blog
   <a href="{{ post.url | relative_url }}">
     <div class="post-wrapper">
       <div class="post">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.date | date_to_string }}</p>
-        <p>{{ post.description }}</p>
+        <p class="date">{{ post.date | date_to_string }}</p>
+        <h2 class="title">{{ post.title }}</h2>
+        <p class="description">{{ post.description }}</p>
       </div>
     </div>
   </a>

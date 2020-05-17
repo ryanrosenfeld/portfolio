@@ -1,11 +1,11 @@
 ---
 description: How I learned how to challenge myself on projects that aren’t challenging, among other lessons.
-image: /assets/images/software_craft.jpg
+image: assets/images/software_craft.jpg
 ---
 ## Am I a hotshot engineer?
 I've spent the last year and nine months working for Atlassian, one of the most renowned software companies out there. As a grad hire straight out of college, I've been working thus far as a full-stack engineer for the Statuspage team. 
 
-![Software Craft]({{ page.image }})
+<!-- ![Software Craft]({{ page.image }}) -->
 
 I had reached the point where I began to feel quite confident in my work. I felt I had a firm handle on the majority of our Ruby on Rails, TypeScript, React codebase. For most smaller sized tasks, I could get them over the line without too much trouble. I began to ask myself - "How can I keep development interesting, and continue to learn, when I have a task that, for the most part, I already know how to implement?"
 
