@@ -5,7 +5,7 @@
     <h3 class="site-subtitle">Your friendly neighborhood software engineer</h3>
     <div class="nav-links">
       {% for item in site.data.navigation %}
-        <a href="{{ item.link | relative_url }}" {% if page.url == (item.link | relative_url) %}class="current"{% endif %}>
+        <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="current"{% endif %}>
           {{ item.name }}
         </a>
       {% endfor %}
