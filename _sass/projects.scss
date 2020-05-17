@@ -1,0 +1,41 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  align-items: start;
+  grid-auto-rows: 100vh;
+
+  .project:nth-of-type(even) {
+    align-self: end;
+  }
+
+  .project:nth-of-type(2n+3) {
+    align-self: start;
+  }
+
+  .project {
+    border: 8px groove color(beige1);
+    padding: 40px;
+    background: white;
+    justify-self: center;
+
+    .project-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 50vh;
+      height: 70vh;
+      box-shadow: -3px 3px 10px rgba(0,0,0,0.82) inset;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .project-content {
+      padding: 30px 40px;
+
+      h2, h3, div {
+        color: white;
+      }
+    }
+  }
+}

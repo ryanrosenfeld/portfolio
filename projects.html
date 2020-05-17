@@ -3,22 +3,17 @@ layout: default
 title: Projects
 ---
 <div class="projects">
-  <div class="page-header">
-    <h1>Projects</h1>
-    <h3>Some things I've noodled on</h3>
-  </div>
-
   {% for project in site.projects %}
-    <a href="{{ project.url | relative_url }}">
-      <div class="project-image" style="background-image: url('{{ project.image | relative_url }}')">
-        <div class="project-info-wrapper">
-          <div class="project-info">
+    <div class="project">
+      <a href="{{ project.url }}"></a>
+        <div class="project-image" style="background-image: url('{{ project.image }}');">
+          <div class="project-content">
             <h2 class="project-title">{{ project.name }} - {{ project.year }}</h2>
             <h3 class="project-description">{{ project.description}}</h3>
             <div class="check-it">Check it out <span class="arrow">→</span></div>
           </div>
-        </div> 
-      </div>
-    </a>
+        </div>
+      </a>
+    </div>
   {% endfor %}
 </div>
