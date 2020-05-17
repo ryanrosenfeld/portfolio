@@ -1,24 +1,40 @@
+$nav-height: 80px;
+
 .site-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: $nav-height;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 60px;
 
   h1, a {
     color: color(brown);
   }
 
-  nav a {
-    margin-right: 15px;
+  nav {
+    display: flex;
 
-    &.current {
-      color: color(gold1);
-      @include bold();
+    a {
+      margin-right: 20px;
+      transform: margin-top 0.8s;
+  
+      &.current {
+        color: color(gold2);
+        @include bold();
+      }
+  
+      &:hover {
+        margin-top: -2px;
+      }
     }
   }
+}
+
+.content {
+  top: $nav-height;
+  // main.css sets the rest of the styles
 }

@@ -10,3 +10,13 @@
     color(white2) 70%, 
     color(grey1));
 }
+
+.content {
+  // top is set by nav css
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
+  padding: 30px 100px;
+}
