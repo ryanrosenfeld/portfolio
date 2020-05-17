@@ -1,0 +1,14 @@
+$colors: (
+  white1: #F1F5F1,
+  white2: #E6E6E4,
+  beige1: #F5EED1,
+  grey1: #CCCBC7,
+  gold1: #956F4A,
+  brown1: #2A342C,
+  silver1: #A6A5A0,
+  silver2: #617376,
+);
+
+@function color($name) {
+  @return map-get($colors, $name);
+}

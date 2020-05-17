@@ -1,8 +1,8 @@
-- name: Welcome
-  link: /
 - name: Blog
   link: /blog
 - name: Projects
   link: /projects
-- name: About me
+- name: About
   link: /about
+- name: Logout
+  link: 

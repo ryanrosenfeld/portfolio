@@ -1,10 +1,14 @@
 @mixin font-style {
-  font-weight: 500;
-  color: #0E2843;
+  font-weight: 400;
+  color: color(brown1);
+}
+
+@mixin bold {
+  font-weight: 800;
 }
 
 body {
-  font-family: "Muli";
+  font-family: 'Jost', sans-serif;
 }
 
 h1, h2, h3, h4, h5, p, a {
@@ -21,4 +25,8 @@ a {
   &:hover {
     color: #5688AB;
   }
+}
+
+.bold {
+  @include bold();
 }

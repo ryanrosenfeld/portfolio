@@ -1,62 +1,24 @@
 .site-nav {
   position: fixed;
-  width: 30%;
-  overflow: auto;
   top: 0;
   left: 0;
-  bottom: 0;
-  background: #161B21;
+  right: 0;
+  height: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
 
-  .header-content {
-    padding: 0 40px 80px;
-    z-index: 2;
-    margin-top: auto;
+  h1, a {
+    color: color(brown);
   }
 
-  .site-title {
-    color: white;
-    font-weight: 600;
-    margin-bottom: 5px;
-  }
+  nav a {
+    margin-right: 15px;
 
-  .site-subtitle {
-    margin: 0 0 20px;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .nav-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: auto;
-    width: 30%;
-    background-image: $nav-image;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      text-decoration: none;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 20px;
-
-      &.current {
-        color: white;
-        font-weight: 600;
-      }
-      
-      & + a {
-        margin-top: 8px;
-      }
+    &.current {
+      color: color(gold1);
+      @include bold();
     }
   }
 }
