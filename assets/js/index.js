@@ -1,6 +1,6 @@
 const text = `
   Welcome! Thanks for swinging by.
-  I'm Ryan. I'm a software engineer... but maybe you already could guess?
+  I'm Ryan. I'm a software engineer... but maybe you could already guess?
 `;
 let i = 0;
 const speed = 50;

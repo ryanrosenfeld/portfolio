@@ -25,3 +25,4 @@ plugins:
 
 permalink: /blog/:year/:month/:day/:title
 exclude: [node_modules]
+baseurl: '/portfolio'
