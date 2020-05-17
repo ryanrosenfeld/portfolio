@@ -2,7 +2,7 @@
 title: Hi!
 layout: base
 ---
-<div class="index">
+<div class="index" style="background-image: url('{{ '/assets/images/welcome_background.jpg' | relative_url }}')">
   <div id="mac-screen">
     <div id="welcome-message"></div>
     <div class="login-container">
@@ -11,4 +11,4 @@ layout: base
   </div>
 </div>
 
-<script src="/assets/js/index.js"></script>
+<script src="{{ '/assets/js/index.js' | relative_url }}"></script>
