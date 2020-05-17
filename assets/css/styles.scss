@@ -7,6 +7,6 @@ $nav-image:
 $baseurl: "{{ site.baseurl }}";
 
 @import "main";
-@import "text";
-@import "nav";
+@import "typography";
 @import "index";
+@import "nav";

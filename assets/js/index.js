@@ -1,20 +1,33 @@
-const text = `
-  Welcome! Thanks for swinging by.
-  I'm Ryan. I'm a software engineer... but maybe you could already guess?
-`;
+const paragraphs = [
+  "Welcome! Thanks for swinging by. I'm Ryan.",
+  "Don't worry, I'm not a computer.",
+  "I identify more closely as a software engineer, writer, and human being."
+];
 let i = 0;
+let paragraphIdx = 0;
+let currentPTag;
 const speed = 50;
-const initialDelay = 500;
-const showLoginDelay = 500;
+const transitionDelay = 500;
 
 function typeWelcomeMessage() {
+  const text = paragraphs[paragraphIdx];
+  if (i == 0) {
+    currentPTag = document.createElement("p");
+    document.getElementById('welcome-message').appendChild(currentPTag);
+  }
+
   if (i < text.length) {
     const c = text.charAt(i);
     i++;
-    document.getElementById('welcome-message').innerHTML += c;
+    currentPTag.innerHTML += c;
     setTimeout(typeWelcomeMessage, speed);
-  } else {
-    setTimeout(showLogin, showLoginDelay);
+  } else if (paragraphIdx < paragraphs.length - 1) {
+    paragraphIdx++;
+    i = 0;
+    setTimeout(typeWelcomeMessage, transitionDelay);
+  }
+  else {
+    setTimeout(showLogin, transitionDelay);
   }
 }
 
@@ -22,4 +35,4 @@ function showLogin() {
   document.getElementById('login-btn').style.visibility = 'visible';
 }
 
-setTimeout(typeWelcomeMessage, initialDelay);
+setTimeout(typeWelcomeMessage, transitionDelay);

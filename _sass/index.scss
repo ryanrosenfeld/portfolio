@@ -18,6 +18,10 @@
   transform: rotateZ(-0.5deg);
   font-family: "Roboto Mono";
   width: 373px;
+
+  p {
+    color: white;
+  }
 }
 
 @keyframes blinkingText{
