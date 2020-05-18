@@ -1,0 +1,18 @@
+.content-item {
+  display: flex;
+  justify-content: center;
+
+  .content {
+    width: 700px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .date {
+      color: color(gold1);
+    }
+  }
+}

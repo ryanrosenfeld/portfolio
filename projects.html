@@ -3,17 +3,18 @@ layout: default
 title: Projects
 ---
 <div class="projects">
-  {% for project in site.projects %}
+  {% assign sortedProjects = site.projects | sort: 'year' | reverse %}
+  {% for project in sortedProjects %}
     <div class="project">
-      <a href="{{ project.url }}"></a>
+      <a href="{{ project.url | relative_url }}">
         <div class="project-image" style="background-image: url('{{ project.image }}');">
           <div class="project-content">
             <p class="project-description">{{ project.description}}</p>
             <div class="check-it">Check it out <i class="fa fa-hand-point-right"></i></div>
           </div>
         </div>
-        <span class="project-title">{{ project.name }}, {{ project.year }}</span>
       </a>
+      <span class="project-title">{{ project.name }}, {{ project.year }}</span>
     </div>
   {% endfor %}
 </div>
