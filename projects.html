@@ -8,11 +8,11 @@ title: Projects
       <a href="{{ project.url }}"></a>
         <div class="project-image" style="background-image: url('{{ project.image }}');">
           <div class="project-content">
-            <h2 class="project-title">{{ project.name }} - {{ project.year }}</h2>
             <h3 class="project-description">{{ project.description}}</h3>
             <div class="check-it">Check it out <span class="arrow">→</span></div>
           </div>
         </div>
+        <span class="project-title">{{ project.name }}, {{ project.year }}</span>
       </a>
     </div>
   {% endfor %}
