@@ -56,7 +56,7 @@
         }
 
         .check-it  {
-          font-size: 18px;
+          @include font-size(l);
 
           i {
             margin-left: 5px;
@@ -95,6 +95,7 @@
       right: 12px;
       color: color(brown1);
       font-family: 'Reenie Beanie';
+      @include font-size(l);
     }
   }
 }

@@ -1,3 +1,11 @@
+$fonts: (
+  xs: 12px,
+  s: 14px,
+  m: 16px,
+  l: 18px,
+  xl: 22px,
+);
+
 @mixin font-style {
   font-weight: 400;
   color: color(brown1);
@@ -6,6 +14,10 @@
 
 @mixin bold {
   font-weight: 800;
+}
+
+@mixin font-size($size) {
+  font-size: map-get($fonts, $size);
 }
 
 body {

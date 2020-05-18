@@ -33,7 +33,7 @@ $text-color: color(brown);
       color: $text-color;
       margin-right: 20px;
       transform: margin-top 0.8s;
-      font-size: 18px;
+      @include font-size(l);
   
       &.current {
         color: color(gold2);

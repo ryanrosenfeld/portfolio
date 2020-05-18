@@ -52,10 +52,10 @@ $sticky4-dark: #fff740;
     height: 200px;
     padding: 15px 20px;
     position:relative;   
-    font-family: 'Reenie Beanie';    
-    font-size: 22px;      
+    font-family: 'Reenie Beanie';      
     border-bottom-right-radius: 60px 5px;
     display:inline-block;
+    @include font-size(xl);
 
     &:after {
       content: "";
