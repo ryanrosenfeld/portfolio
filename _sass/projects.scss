@@ -34,7 +34,45 @@
       width: 50vh;
       height: 70vh;
       box-shadow: -3px 3px 10px rgba(0,0,0,0.82) inset;
-      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+
+      .project-content {
+        opacity: 0;
+        padding: 30px 40px;
+        background: rgba(22,27,33,.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .project-description, .check-it {
+          opacity: 0;
+          color: white;
+        }
+      }
+
+      &:hover {
+        .project-content, .project-description, .check-it {
+          opacity: 1;
+        }
+
+        .project-content {
+          transition: opacity 0.2s;
+        }
+
+        .project-description {
+          transition: opacity 1s;
+        }
+
+        .check-it {
+          transition: opacity 0.5s 0.7s;
+        }
+      }
     }
 
     .project-title {
@@ -43,15 +81,6 @@
       right: 12px;
       color: color(brown1);
       font-family: 'Reenie Beanie';
-    }
-
-    .project-content {
-      visibility: hidden;
-      padding: 30px 40px;
-
-      h2, h3, div {
-        color: white;
-      }
     }
   }
 }
