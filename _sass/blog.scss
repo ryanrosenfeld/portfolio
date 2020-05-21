@@ -49,12 +49,16 @@ $sticky4-dark: #fff740;
     transition: all 0.5s;
     text-align: center;    
     width: 275px;    
-    height: 200px;
-    padding: 15px 20px;
+    height: 240px;
+    padding: 20px 20px 10px;
     position:relative;   
     font-family: 'Reenie Beanie';      
     border-bottom-right-radius: 60px 5px;
-    display:inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     @include font-size(xl);
 
     &:after {
@@ -71,7 +75,9 @@ $sticky4-dark: #fff740;
     }
 
     .date {
-      text-align: right;
+      position: absolute;
+      top: 10px;
+      right: 10px;
     }
   }
 }

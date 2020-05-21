@@ -5,14 +5,14 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "projects"
     values:
-      layout: "author"
+      layout: "content-item"
   - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "content-item"
   - scope:
       path: ""
     values:
