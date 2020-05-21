@@ -13,89 +13,63 @@
     align-self: start;
   }
 
-  .project {
-    border: 8px groove transparent;
-    border-image: url("#{$baseurl}/assets/images/wood_panelling.jpg") 30% stretch;
-    padding: 40px;
-    background: white;
-    justify-self: center;
-    position: relative;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.2), 
-              2px 2px 2px rgba(0,0,0,0.2), 
-              3px 4px 4px rgba(0,0,0,0.2), 
-              4px 8px 8px rgba(0,0,0,0.2),
-              5px 16px 16px rgba(0,0,0,0.2),
-              6px 32px 32px rgba(0,0,0,0.2);
+  .project.framed {
+    padding: 50px;
+  }
 
-    .project-image {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 50vh;
-      height: 70vh;
-      box-shadow: -3px 3px 10px rgba(0,0,0,0.82) inset;
-      position: relative;
-      cursor: pointer;
+  .frame-image {
+    width: 50vh;
+    height: 70vh;
+    cursor: pointer;
 
-      .project-content {
+    .frame-content {
+      opacity: 0;
+
+      .project-description, .check-it {
         opacity: 0;
-        padding: 30px 40px;
-        background: rgba(22,27,33,.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        .project-description, .check-it {
-          opacity: 0;
-          color: white;
-        }
-
-        .check-it  {
-          @include font-size(l);
-
-          i {
-            margin-left: 5px;
-            transform: rotateZ(-90deg);
-          }
-        }
+        color: white;
       }
 
-      &:hover {
-        .project-content, .project-description, .check-it {
-          opacity: 1;
-        }
+      .check-it  {
+        @include font-size(l);
 
-        .project-content {
-          transition: opacity 0.2s;
-        }
-
-        .project-description {
-          transition: opacity 1s;
-        }
-
-        .check-it {
-          transition: opacity 0.5s 0.7s;
-
-          i {
-            transition: transform 0.4s 1s;
-            transform: none;
-          }
+        i {
+          margin-left: 5px;
+          transform: rotateZ(-90deg);
         }
       }
     }
 
-    .project-title {
-      position: absolute;
-      bottom: 8px;
-      right: 12px;
-      color: color(brown1);
-      font-family: 'Reenie Beanie';
-      @include font-size(l);
+    &:hover {
+      .frame-content, .project-description, .check-it {
+        opacity: 1;
+      }
+
+      .frame-content {
+        transition: opacity 0.2s;
+      }
+
+      .project-description {
+        transition: opacity 1s;
+      }
+
+      .check-it {
+        transition: opacity 0.5s 0.7s;
+
+        i {
+          transition: transform 0.4s 1s;
+          transform: none;
+        }
+      }
     }
+  }
+
+  .project-title {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    color: color(brown1);
+    font-family: 'Reenie Beanie';
+    @include font-size(xxl);
   }
 }

@@ -5,10 +5,10 @@ title: Projects
 <div class="projects">
   {% assign sortedProjects = site.projects | sort: 'year' | reverse %}
   {% for project in sortedProjects %}
-    <div class="project">
+    <div class="project framed">
       <a href="{{ project.url | relative_url }}">
-        <div class="project-image" style="background-image: url('{{ project.image }}');">
-          <div class="project-content">
+        <div class="frame-image" style="background-image: url('{{ project.image }}');">
+          <div class="frame-content">
             <p class="project-description">{{ project.description}}</p>
             <div class="check-it">Check it out <i class="fa fa-hand-point-right"></i></div>
           </div>
