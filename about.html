@@ -2,4 +2,18 @@
 layout: default
 title: About me
 ---
-Hi!
+<div class="about-page">
+  {% for item in site.data.about_content %}
+    {% capture content %}{% include about_content/{{item.name}}.md %}{% endcapture %}
+    <div class="section {{ item.name }} {% cycle 'reverse', '' %}">
+      <div class="photo">
+        <div class="framed">
+          <div class="frame-image" style="background-image: url('{{ item.image }}');"></div>
+        </div>
+      </div>
+      <div class="content">
+        {{ content | markdownify }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

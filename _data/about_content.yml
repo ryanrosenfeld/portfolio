@@ -1,0 +1,8 @@
+- name: 'intro'
+  image: 'assets/images/ryan_main_pic.jpg'
+- name: 'work'
+  image: 'assets/images/statuspage.jpg'
+- name: 'hobbies'
+  image: 'assets/images/ryan_climbing.jpg'
+- name: 'dream_job'
+  image: 'assets/images/ryan_barcelona.jpg'

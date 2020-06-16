@@ -1,0 +1,6 @@
+# Work Ryan
+After graduating college, I joined Atlassian as a junior full-stack engineer in July 2018. I've been a happy member of the Statuspage team ever since, where I've reveled in the experience of being on a smaller product team with the support of a large company (joined at ~12 engineers, now up to over 20). After close to 1.5 years of hard work I was fortunate enough to be promoted to a mid-level position.
+
+Our tech stack is primarily Ruby on Rails, React, TypeScript, and Graphql. I've played an important role on several high-impact projects, including the release of our free plan, allowing users to embed the status of their page in any website, an analytics feature tracking page views and subscribers for customers' status pages, and feature leading a CSV import project that allows customers to quickly get set up with users at varying levels of permissions.
+
+Statuspage brings interesting challenges. It's a fast-paced environment in which we deploy code ~10 times every day. I've had to learn a lot about deploying performant code that has to perform well at scale -- our status pages will regularly see spikes from hundreds to millions of page views in a matter of minutes.

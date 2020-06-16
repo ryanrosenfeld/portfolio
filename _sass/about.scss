@@ -1,0 +1,40 @@
+.about-page {
+  .section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+
+    h1 {
+      @include font-size(xl);
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    .framed {
+      width: 300px;
+      height: 400px;
+    }
+  }
+}
