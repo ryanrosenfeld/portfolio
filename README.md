@@ -1,1 +1,1 @@
-Ryan's personal website!
+A WIP personal website, built from scratch.
